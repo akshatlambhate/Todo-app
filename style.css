@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin: 3rem;
+
+}
+body {
+    background-image: linear-gradient(#F08080,#F4978E,#F8AD9D,#FBC4AB,#FFDAB9);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+.todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+.todoinput{
+    padding: 1.2rem 3rem;
+    background-color: white;
+    border: none;
+    font-size: 1.2rem;
+    transition: all 1s ease;
+    
+}
+.todoinput:focus {
+    outline: none;
+    border: none;
+}
+.tosubmit {
+    background-color: white;
+    padding: 1.2em 1.5em 1.2em 3em ;
+    border: none;
+    font-size: 1.2rem;
+    
+}
+form {
+    background-color: white;
+}
+.todo-container {
+    margin-top: 5rem;
+    display: flex; 
+    gap: 3rem;
+    justify-content: center;
+
+
+}
+.newtodo-div {
+    display: flex; 
+    justify-content: space-between;
+     background-color: #d8e2dc;
+    /* border: 1px solid wheat; */
+    font-size: 1.2rem;
+     list-style: none;
+    margin: 1rem;
+    transition: all 0.5s ease;
+
+}
+ .new-todo {
+    text-align: left;
+    padding: 0.5em 3rem;
+    padding-left: 0.3em;
+    flex: 1;
+    transition: all 1s ease ;
+
+ 
+ }
+ .completebtn ,.trashbtn{
+    padding: 0em 1em;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #52b788;
+    cursor: pointer;
+ }
+ .trashbtn {
+    background-color: #ba181b;
+ }
+ .fa-check,.fa-trash-can {
+    pointer-events: none;
+ }
+ .completed {
+     text-decoration: line-through;
+     opacity: 0.5;
+
+ }
+ .fall {
+   transform: translateY(6rem) rotateZ(25deg);
+     opacity: 0;
+ } 
+
+ .filterdiv {
+    padding: 2rem;
+
+ }
+ .todo-filter {
+   margin: 1.2rem;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+    outline: none;
+    appearance: none;
+    padding: 0.5rem 1rem;
+    width: 13rem;
+    
+ }
+ select {
+    color: #003049;
+    font-size: 1.2rem;
+    background-color: #fcbf49
+
+ }
+ .todo-filter::after{
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #003049;
+ }
