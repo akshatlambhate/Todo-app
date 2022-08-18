@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: rock ;
+    src: url("RubikMoonrocks-Regular.ttf");
+}
 
 header {
     text-align: center;
@@ -10,8 +14,8 @@ header {
 
 }
 body {
-    background-image: linear-gradient(#F08080,#F4978E,#F8AD9D,#FBC4AB,#FFDAB9);
-    background-size: 100%;
+    background-image: url("background.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
@@ -24,25 +28,43 @@ body {
 }
 .todoinput{
     padding: 1.2rem 3rem;
-    background-color: white;
+    background-color: #253127;
     border: none;
     font-size: 1.2rem;
     transition: all 1s ease;
+    color: white;
     
+}
+ header h1 {
+    font-family: rock;
+    font-size: 5rem;
 }
 .todoinput:focus {
     outline: none;
     border: none;
 }
 .tosubmit {
-    background-color: white;
-    padding: 1.2em 1.5em 1.2em 3em ;
+    background-color: #253127;
+    padding: 1.2em 1.5em 1.2em 1.5em ;
     border: none;
     font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+  
+}
+.tosubmit:hover {
+    color: #003049;
+    background-color: white;
+    padding: 1.2em 1.5em 1.2em 1.5em ;
+    transition:  all 0.3s ease;
     
 }
+.tosubmit:focus {
+    outline: none;
+    border: none;
+}
 form {
-    background-color: white;
+    background-color: #253127;
 }
 .todo-container {
     margin-top: 5rem;
@@ -52,20 +74,22 @@ form {
 
 
 }
-.newtodo-div {
+.newtodoDiv {
     display: flex; 
     justify-content: space-between;
-     background-color: #d8e2dc;
+     background-color: #3A4A4C;
+     color: white;
     /* border: 1px solid wheat; */
     font-size: 1.2rem;
      list-style: none;
     margin: 1rem;
     transition: all 0.5s ease;
+    /* width: 4rem; */
 
 }
  .new-todo {
     text-align: left;
-    padding: 0.5em 3rem;
+    padding: 0.7em 5em;
     padding-left: 0.3em;
     flex: 1;
     transition: all 1s ease ;
@@ -77,11 +101,11 @@ form {
     border: none;
     font-size: 1.2rem;
     color: white;
-    background-color: #52b788;
+    background-color: #85d415d8;
     cursor: pointer;
  }
  .trashbtn {
-    background-color: #ba181b;
+    background-color: #f44649f2;
  }
  .fa-check,.fa-trash-can {
     pointer-events: none;
@@ -98,28 +122,23 @@ form {
 
  .filterdiv {
     padding: 2rem;
+    
 
  }
  .todo-filter {
    margin: 1.2rem;
-   -webkit-appearance: none;
-   -moz-appearance: none;
-    outline: none;
-    appearance: none;
+     outline: none;
     padding: 0.5rem 1rem;
     width: 13rem;
+    
+
     
  }
  select {
     color: #003049;
     font-size: 1.2rem;
-    background-color: #fcbf49
-
- }
- .todo-filter::after{
-    content: "\25BC";
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: #003049;
+    background-color: #ccceb0;
+    border-radius: 2rem;
+    cursor: pointer;
+   
  }
